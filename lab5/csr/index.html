@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Categories List</title>
+        <link href="../assets/style.css" rel="stylesheet" />
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div class='container' id="contentContainer">
+            <div class='navigation'>
+                <ul>
+                    <li><a id="opticalDriveLink" href="#">Оптичні приводи</a></li>
+                    <li><a id="categoryLink" href="#">Категорії</a></li>
+                    <li><a id="propertyLink" href="#">Властивості</a></li>
+                    <li><a id="logoutLink" href="#">Вийти</a></li>
+                </ul>
+            </div>
+            <div class='table-content'>
+                    <h1 id="pageHeader">Категорії</h1>
+                    <table id="dataTable">
+                        
+                    </table>
+            </div>
+            <div class='form-content'>
+                <form method="POST" id="categoryForm" class="app-form">
+                    <p><input type="text" id="categoryNameInput" placeholder="Назва" name="name" required/></p>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+                <form method="POST" id="propertyForm" class="app-form">
+                    <p><input type="text" id="propertyNameInput" placeholder="Назва" name="name" required/></p>
+                    <p><input type="text" id="propertyUnitsInput" placeholder="Одиниці вимірювання" name="units" required/></p>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+                <form method="POST" id="opticalDriveForm" class="app-form">
+                    <p><input type="text" id="opticalDriveNameInput" placeholder="Модель" name="name" required/></p>
+                    <p><input type="text" id="opticalDriveVendorInput" placeholder="Виробник" name="vendor" required/></p>
+                    <p><select id="opticalDriveCategoryInput"></select> </p>
+                    <p><input type="text" id="opticalDrivePriceInput" placeholder="Ціна" name="price" required/></p>
+                    <p><input type="text" id="opticalDrivePropertiesInput" placeholder="Характеристики" name="properties" required/></p>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+            </div>
+        </div>
+        <div class='container' id="loginContainer">
+            <div class='form-content'>
+                <h1>Вхід</h1>
+                <form method="POST" id="loginForm">
+                    <p><input type="text" placeholder="Логін" id="loginInput" name="login" required/></p>
+                    <p><input type="password" placeholder="Пароль" id="passwordInput" name="password" required/></p>
+                    <p><button type="submit">Увійти</button></p>
+                    <p id="loginErrorText"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="../assets/main-csr.js"></script>
+</html>

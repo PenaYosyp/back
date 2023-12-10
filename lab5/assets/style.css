@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #202124;
+    text-align: center;
+}
+h1 {
+    color: #BB3D32;
+}
+td {
+    text-align: center;
+    padding: 25px;
+}
+.form-content {
+    padding-right: 40px;
+}
+select {
+    width:170px;
+}
+.container {
+    padding-top: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container.login-container, #loginContainer {
+    justify-content: center;
+}
+#loginContainer,#contentContainer {
+    display: none;
+}
+.navigation ul {
+    list-style: none;
+}
+.navigation ul li {
+    padding:7px 7px;
+    background-color: #BB3D32;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.navigation ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+}
+.app-form {
+    display:none;
+}
